@@ -1,3 +1,8 @@
+# Specific files and folders that we wish to ignore:
+data/*
+core/output/*
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
