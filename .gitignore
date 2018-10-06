@@ -1,7 +1,7 @@
 # Specific files and folders that we wish to ignore:
 data/*
 core/output/*
-
+core/luca_data_analysis/media/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
