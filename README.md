@@ -20,5 +20,5 @@ Moreover than the tasks he usually does, here some specific roles:
 - **David:** Scientific expert
 - **Harry:**
 - **Luca:** Github manager
-- **Ole:**
+- **Ole:** Overleaf manager
 - **Carles:**
