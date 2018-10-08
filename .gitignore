@@ -1,7 +1,9 @@
 # Specific files and folders that we wish to ignore:
 data/*
 core/output/*
-
+core/luca_data_analysis/media/
+core/luca_data_analysis/plasticc_classification_demo.ipynb
+core/luca_data_analysis/plasticc_astro_starter_kit.ipynb
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
