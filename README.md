@@ -11,6 +11,8 @@ Every member sould work on his own branch and submit to the master branch once h
   Which contain the model. They should be easy to call independently
 - **core/**
   Which contains the core code that calls the models
+- **helpers/**
+  Some useful tools for data pre-processing and other miscellaneous code.
 
 In all the cases subfolders can be creates for helpers and auxiliary code.
 
