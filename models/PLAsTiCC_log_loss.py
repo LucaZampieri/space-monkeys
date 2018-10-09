@@ -51,7 +51,7 @@ class LogLoss(object):
         y = K.clip(y_pred, 1e-15, 1 - 1e-15)
         
         # return the log loss value
-        return K.sum(y_true * K.log(y))
+        return - K.sum(y_true * K.log(y))
     
     # Define the weighted log loss
     def _weighted_log_loss(weights:np.ndarray):
