@@ -68,7 +68,7 @@ class LogLoss(object):
             if len(weights.shape) == 1:
                 # Transform into (n_classes, 1) so it can be transposed
                 weights = np.array([weights])
-            elif len(weights.shape) > 3:
+            elif len(weights.shape) > 2:
                 raise ValueError('weights shape must be (n_classes,) or (n_classes, 1)')
             else if weights.shape[1] > 1:
                 raise ValueError('weights shape must be (n_classes,) or (n_classes, 1)')
