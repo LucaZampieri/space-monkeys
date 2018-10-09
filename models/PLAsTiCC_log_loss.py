@@ -41,11 +41,13 @@ class LogLoss(object):
     loss = LogLoss._log_loss
     """
 
-    def __init__(weights=None):
+    def __init__(self, weights=None):
         self.weights = weights
-    
+        self.__name__ = 'log_loss'
+
     # Define the log loss
-    def _log_loss(y_true, y_pred)
+    @staticmethod
+    def _log_loss(y_true, y_pred):
         
         # Clip input to avoud numerical problems with log function
         y = K.clip(y_pred, 1e-15, 1 - 1e-15)
@@ -54,6 +56,7 @@ class LogLoss(object):
         return - K.sum(y_true * K.log(y))
     
     # Define the weighted log loss
+    @staticmethod
     def _weighted_log_loss(weights:np.ndarray):
         
         """Weighted logarithmic loss function
