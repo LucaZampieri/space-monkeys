@@ -70,7 +70,7 @@ class LogLoss(object):
                 weights = np.array([weights])
             elif len(weights.shape) > 2:
                 raise ValueError('weights shape must be (n_classes,) or (n_classes, 1)')
-            else if weights.shape[1] > 1:
+            elif weights.shape[1] > 1:
                 raise ValueError('weights shape must be (n_classes,) or (n_classes, 1)')
         else:
             weights = np.array([weights])
